@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block textbody %}
+
+<p>This is the product page {% if product_name is defined %}{{ product_name }} {% endif %}</p>
+<a href="/">homepage</a>
+<form method="post">
+    <input type="text" name="product_name">
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}
